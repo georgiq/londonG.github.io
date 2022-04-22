@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Emblem Books</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    <div id="pagewrapper">
+        <header id="pageheader" role="banner">
+            <nav id="headerlinks">
+                <ul>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+            <nav class="primarynav" id="primarynav" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Books as an investment</a></li>
+                </ul>
+            </nav>
+            <section class="logo">
+                <article>
+                    <h1>Emblem Books</h1>
+                    <span id="emblemsubtitle">Rare Collectible Books</span>
+                </article>
+            </section>
+        </header>
+        <main role="main" id="contactinfo">
+            <div class="contact">
+                <section id="topcont">
+                    <h2>Contact us</h2>
+                    <p>Please feel free to contact is if you are looking to buy a book not listed in our collection, or you are looking to sell a book, have a book valued or have a book repaired. We try to answer all queries within 24 hours of receipt.</p>
+                </section>
+            </div>
+            <form method="post">
+                <fieldset>
+                    <legend>Send us a message</legend>
+					<div class="controlgroup">
+                        <label for="title">Title:</label> <br/>
+						
+                        <select name="tit" id="title">
+						    <option value="0"></option>   
+                            <option value="1">Mr</option>
+                            <option value="2">Mrs</option>
+                            <option value="3">Miss</option>
+                            <option value="4">Ms</option>
+							<option value="3">Dr</option>
+                            <option value="4">Prof</option>
+                        </select>
+                    </div>
+                  
+                    <div class="controlgroup">
+                        <label for="fname">Full Name:</label>
+                        <br/>
+                        <input type="text" name="fullname" id="fname" placeholder="Your full name" required />
+                    </div>
+					<div class="controlgroup">
+                        <label for="email">Email address:</label>
+                        <br/>
+                        <input type="email" name="email" id="email" placeholder="Your full email address" required />
+                    </div>
+                    <div class="controlgroup">
+                        <label for="int">I am interested in:</label> <br/>
+                        <select name="interest" id="int">
+						    <option value="0"></option>
+                            <option value="1">Buy books</option>
+                            <option value="2">Sell books</option>
+                            <option value="3">Return a book</option>
+                            <option value="4">Delivery</option>
+							<option value="5">Complaint</option>
+                            <option value="6">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="controlgroup">
+                        <label for="msg">Message:</label><br/>
+                        <textarea placeholder="Type your message here..." name="message" id="msg"></textarea>
+                    </div>
+                    <input id="button" type="submit" name="sendmessage" value="Send" />
+                </fieldset>
+            </form>
+        </main>
+        <footer id="footer" role="contentinfo">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Returns</a></li>
+            </ul>
+        </footer>
+
+    </div>
+</body>
+
+</html>
+
